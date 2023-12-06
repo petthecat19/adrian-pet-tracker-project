@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <style>
         img { height: 15rem; }
         sup { color: red; }
@@ -15,6 +16,51 @@
 </head>
 
 <body>
-    <h1>GOODBYE</h1>
+    <h1>Pet Tracker:</h1>
+    <form>
+        <label for="pet name" class="required">Pet Name:</label>
+        <input type="text" name="pet name" id="pet name" placeholder="What's their name?" required>
+        
+        <label for="profile picture" class="required">Profile Picture:</label>
+        <input type="text" name="profile picture" id="profile picture" placeholder="Picture URL" required>
+
+        <fieldset>
+            <legend class="required">Species:</legend>
+            
+            <label for="Dog">Dog</label>
+            <input type="radio" name="pet" id="Dog" required>
+            
+            <label for="Cat">Cat</label>
+            <input type="radio" name="pet" id="Cat">
+            
+            <label for="Bird">Bird</label>
+            <input type="radio" name="pet" id="Bird">
+
+            <label for="Rabbit">Rabbit</label>
+            <input type="radio" name="pet" id="Rabbit">
+
+            <label for="Snake">Snake</label>
+            <input type="radio" name="pet" id="Snake">    
+
+            <label for="Lizard">Lizard</label>
+            <input type="radio" name="pet" id="Lizard">
+
+            <label for="Turtle">Turtle</label>
+            <input type="radio" name="pet" id="Turtle">
+
+            <label for="friendlycheck">Are they friendly?</label>
+            <input type="checkbox" name="checkbox" id="friendlycheck">
+
+            <label for="addpet"></label>
+            <input type="submit" value="Add Pet!" id="addpet">
+        </fieldset>
+    </form>
+
+    <div class="Pet List">
+        <h1>Pet List:</h1>
+
+    </div>
+    
+
 </body>
 </html>

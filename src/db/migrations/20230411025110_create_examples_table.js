@@ -7,7 +7,7 @@
 exports.up = function (knex) {
     return knex.schema.createTable('example_resources', (table) => {
       table.increments(); // this is the id
-      table.string('title'); // text
+      table.string(''); // text
       table.integer('priority'); // integer
       table.boolean('is_done').defaultTo(false); // boolean, optional default
   
